@@ -2,63 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Ariba Cans specializes in high-quality plastic and tin packaging solutions for pharmaceutical, paint, and industrial sectors.">
-<meta name="keywords" content="plastic cans, tin packaging, pharmaceutical packaging, paint packaging, Ariba Cans, industrial packaging">
-<meta name="author" content="Ariba Cans">
-
   <title>Contact Us | Ariba Cans</title>
-  <link href="css/style.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/contact-style.css">
 </head>
 <body>
-    <div id="loader"></div>
-<header class="text-center p-5 bg-primary text-white">
-  <h1>Contact Ariba Cans</h1>
-</header>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark custom-navbar">
-    <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
-        <li class="nav-item"><a class="nav-link" href="industries.html">Industries</a></li>
-        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-    </ul>
-</nav>
+  <header>
+    <h1>Contact Us</h1>
+  </header>
 
+  <section class="contact-section">
+    <form action="https://formsubmit.co/aribaplasticans@gmail.com" method="POST">
+      <!-- Hidden field to redirect after submit -->
+     <div> <input type="hidden" name="_next" value="https://yourusername.github.io/ariba-cans/thankyou.html"></div>
+     <div><input type="hidden" name="_captcha" value="false"></div>
 
-<section class="p-5 container">
-  <h2>Get in Touch</h2>
-  <form>
-    <label>Name:</label>
-    <input type="text" required><br><br>
+     <div><input type="text" name="name" placeholder="Your Name" required></div>
+      <div><input type="email" name="email" placeholder="Your Email" required></div>
+      <div><input type="text" name="phone" placeholder="Your Phone" required></div>
+      <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+<a href="https://wa.me/919444399942" class="whatsapp-float" target="_blank">
+  <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp Chat">
+</a>
 
-    <label>Email:</label>
-    <input type="email" required><br><br>
-
-    <label>Phone:</label>
-    <input type="text" required><br><br>
-
-    <label>Message:</label><br>
-    <textarea rows="5"></textarea><br><br>
-
-    <button type="submit">Submit</button>
-  </form>
-</section>
-
-<footer class="text-center p-3 bg-dark text-white">
-  &copy; 2025 Ariba Cans. All rights reserved.
-</footer>
-<a href="https://wa.me/9444403222" class="whatsapp-float" target="_blank">
-    &#x1F4AC;
-  </a>
-  <script>
-    window.addEventListener("load", function(){
-      const loader = document.getElementById("loader");
-      loader.style.display = "none";
-    });
-  </script>
 </body>
-
 </html>
