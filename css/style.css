@@ -441,4 +441,178 @@ nav ul {
   }
 }
 
+.product-collage {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+  padding: 20px;
+}
+
+
+
+.product-img:hover {
+  transform: scale(1.05);
+}
+
+.product-info {
+  grid-column: 2 / 3;
+  text-align: center;
+  padding: 20px;
+  background: #f2f2f2;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.product-info h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.product-info p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .product-collage {
+    grid-template-columns: 1fr;
+  }
+
+  .product-info {
+    grid-column: auto;
+  }
+
+  
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+}
+
+nav ul li {
+  position: relative;
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+nav ul li.logo img {
+  width: 140px;
+  height: auto;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%; /* directly under the menu item */
+  left: 0;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  min-width: 220px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 100;
+}
+
+.dropdown-content li {
+  margin: 0;
+}
+
+.dropdown-content li a {
+  display: block;
+  padding: 12px 20px;
+  color: #333;
+}
+
+.dropdown-content li a:hover {
+  background-color: #f0f0f0;
+}
+
+/* Keep it open when hovering either on dropdown or its parent */
+.dropdown:hover .dropdown-content,
+.dropdown-content:hover {
+  display: block;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  .dropdown-content {
+    position: static;
+    display: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown-content li a {
+    padding: 10px 0;
+  }
+}
+.product-section {
+  padding: 50px 20px;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.product-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: #333;
+}
+
+.product-collage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.product-img {
+  width: calc(40% - 90px);
+  height: 400px;
+  aspect-ratio: 1 / 1; /* Ensures it's always square */
+  border-radius: 8px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  margin: 5px;
+}
+
+.product-info {
+  flex: 1 1 100%;
+  text-align: center;
+  padding: 20px;
+  background: #f8f8f8;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .product-img {
+    width: 45%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+}
+
+
+
+
 
