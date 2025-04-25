@@ -561,7 +561,7 @@ nav ul li.logo img {
   position: absolute;
   top: 100%; /* directly under the menu item */
   left: 0;
-  background: #fff;
+  background: #1d3557;
   border: 1px solid #ddd;
   border-radius: 5px;
   min-width: 220px;
@@ -699,6 +699,27 @@ nav ul li.logo img {
     text-align: center;
   }
 }
+/* Hide hamburger menu on large screens */
+.menu-toggle {
+  display: none;
+}
+
+/* Show hamburger only on small screens */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar-nav {
+    display: none; /* initially hide menu */
+  }
+
+  .navbar-nav.active {
+    display: flex;  /* show menu when toggled */
+    flex-direction: column;
+  }
+}
+
 
 
 
