@@ -576,11 +576,12 @@ nav ul li.logo img {
 .dropdown-content li a {
   display: block;
   padding: 12px 20px;
-  color: #333;
+  color: #f2f2f2;
 }
 
 .dropdown-content li a:hover {
   background-color: #f0f0f0;
+  color: #333
 }
 
 /* Keep it open when hovering either on dropdown or its parent */
@@ -657,6 +658,48 @@ nav ul li.logo img {
     aspect-ratio: 1 / 1;
   }
 }
+
+.navbar-toggler {
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: white;
+  display: none;
+  margin-right: 15px;
+}
+
+.mobile-menu {
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-toggler {
+    display: block;
+  }
+
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #1d3557;
+    width: 100%;
+  }
+
+  .mobile-menu.show {
+    display: flex;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .nav-item {
+    margin: 5px 0;
+    text-align: center;
+  }
+}
+
 
 
 
